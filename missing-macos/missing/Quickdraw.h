@@ -283,6 +283,8 @@ extern void OpenRgn( void );
 
 extern void CloseRgn( RgnHandle dstRgn );
 
+extern OSErr BitMapToRegion( RgnHandle rgn, const BitMap* bitmap );
+
 // ...
 
 extern void DisposeRgn( RgnHandle rgn );
@@ -574,6 +576,10 @@ extern Pattern* GetQDGlobalsBlack    ( Pattern* black  );
 extern Pattern* GetQDGlobalsWhite    ( Pattern* white  );
 
 extern CGrafPtr GetQDGlobalsThePort( void );
+
+// ...
+
+extern Rect* GetRegionBounds( RgnHandle rgn, Rect* bounds );
 
 // ...
 
