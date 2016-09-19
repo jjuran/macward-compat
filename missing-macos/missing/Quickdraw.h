@@ -181,7 +181,7 @@ extern void SetPenState( const PenState* pnState );
 extern void PenSize( short  width,
                      short  height );
 
-// ...
+extern void PenMode( short mode );
 
 extern void PenPat( const Pattern* pat );
 
