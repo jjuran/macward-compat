@@ -471,6 +471,8 @@ extern void GetBackColor( RGBColor* color );
 
 extern void DisposeCTable( CTabHandle cTable );
 
+extern CTabHandle GetCTable( short ctabID );
+
 // ...
 
 extern void AllocCursor( void );
