@@ -108,6 +108,10 @@ extern GWorldFlags GetPixelsState( PixMapHandle pm );
 extern void SetPixelsState( PixMapHandle  pm,
                             GWorldFlags   state );
 
+extern Ptr GetPixBaseAddr( PixMapHandle pm );
+
+extern long GetPixRowBytes( PixMapHandle pm );
+
 // ...
 
 extern PixMapHandle GetGWorldPixMap( GWorldPtr offscreenGWorld );
