@@ -133,6 +133,8 @@ extern Boolean QDSwapPort( CGrafPtr   inNewPort,
 
 // ...
 
+extern void SetPortBits( const BitMap* bitmap );
+
 extern void PortSize( short  width,
                       short  height );
 
