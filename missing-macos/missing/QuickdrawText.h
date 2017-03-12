@@ -38,9 +38,17 @@ extern void TextSize( short size );
 
 // ...
 
+extern void DrawChar( CharParameter ch );
+
+extern void DrawString( ConstStr255Param s );
+
+extern void MacDrawText( const void* buffer, short offset, short length );
+
 extern short CharWidth( CharParameter ch );
 
 extern short StringWidth( ConstStr255Param s );
+
+extern short TextWidth( const void* buffer, short offset, short length );
 
 // ...
 
