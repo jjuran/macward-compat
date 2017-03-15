@@ -441,6 +441,10 @@ extern Boolean MacPtInRect( Point        pt,
 
 // ...
 
+extern Boolean PtInRgn( Point pt, RgnHandle rgn );
+
+// ...
+
 extern void DisposePixPat( PixPatHandle pp );
 
 // ...
