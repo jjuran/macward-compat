@@ -218,6 +218,9 @@ extern void MacLineTo( short  h,
 extern void Line( short  dh,
                   short  dv );
 
+extern void ForeColor( long color );
+extern void BackColor( long color );
+
 // ...
 
 #pragma mark -
