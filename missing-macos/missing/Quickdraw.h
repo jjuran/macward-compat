@@ -61,6 +61,21 @@ enum
 
 enum
 {
+	                     // 256 128  64  32  16   8   4   2   1
+	blackColor   = 33,   //               X                   X
+	whiteColor   = 30,   //                   X   X   X   X
+	redColor     = 205,  //       X   X           X   X       X
+	greenColor   = 341,  //   X       X       X       X       X
+	blueColor    = 409,  //   X   X           X   X           X
+	cyanColor    = 273,  //   X               X               X
+	magentaColor = 173,  //       X               X           X
+	yellowColor  = 69,   //           X               X       X
+};
+
+// ...
+
+enum
+{
 	sysPatListID = 0,
 	iBeamCursor  = 1,
 	crossCursor  = 2,
