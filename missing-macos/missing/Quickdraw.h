@@ -538,6 +538,8 @@ extern short QDError( void );
 
 extern CursHandle MacGetCursor( short cursorID );
 
+extern PicHandle GetPicture( short pictureID );
+
 // ...
 
 extern void ShieldCursor( const Rect* shieldRect, Point offset );
