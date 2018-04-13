@@ -598,6 +598,8 @@ extern Pattern* GetQDGlobalsWhite    ( Pattern* white  );
 
 extern CGrafPtr GetQDGlobalsThePort( void );
 
+extern void SetQDGlobalsRandomSeed( long randSeed );
+
 // ...
 
 extern Rect* GetRegionBounds( RgnHandle rgn, Rect* bounds );
