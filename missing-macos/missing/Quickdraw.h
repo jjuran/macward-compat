@@ -378,6 +378,15 @@ extern void CopyBits( const BitMap*  srcBits,
 
 // ...
 
+extern void CopyMask( const BitMap*  srcBits,
+                      const BitMap*  maskBits,
+                      const BitMap*  dstBits,
+                      const Rect*    srcRect,
+                      const Rect*    maskRect,
+                      const Rect*    dstRect );
+
+// ...
+
 #pragma mark -
 
 extern void ClosePicture( void );
