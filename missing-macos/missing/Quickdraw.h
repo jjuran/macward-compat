@@ -513,6 +513,10 @@ extern CursHandle MacGetCursor( short cursorID );
 
 // ...
 
+extern void ShieldCursor( const Rect* shieldRect, Point offset );
+
+// ...
+
 extern PixMapHandle GetPortPixMap( CGrafPtr port );
 
 extern const BitMap* GetPortBitMapForCopyBits( CGrafPtr port );
