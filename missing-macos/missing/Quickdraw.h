@@ -389,9 +389,9 @@ extern void DrawPicture( PicHandle    pic,
 
 extern void KillPicture( PicHandle pic );
 
-// ...
-
 #pragma mark -
+
+extern PolyHandle OpenPoly( void );
 
 extern void ClosePoly( void );
 
