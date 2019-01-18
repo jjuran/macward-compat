@@ -316,7 +316,11 @@ extern void MacCopyRgn( RgnHandle  srcRgn,
 
 extern void SetEmptyRgn( RgnHandle rgn );
 
-// ...
+extern void SetRectRgn( RgnHandle  rgn,
+                        short      left,
+                        short      top,
+                        short      right,
+                        short      bottom );
 
 extern void RectRgn( RgnHandle    rgn,
                      const Rect*  r );
