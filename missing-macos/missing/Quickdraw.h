@@ -550,6 +550,11 @@ extern void ShieldCursor( const Rect* shieldRect, Point offset );
 
 // ...
 
+extern void PackBits  ( Ptr* src, Ptr* dst, short srcBytes );
+extern void UnpackBits( Ptr* src, Ptr* dst, short dstBytes );
+
+// ...
+
 extern PixMapHandle GetPortPixMap( CGrafPtr port );
 
 extern const BitMap* GetPortBitMapForCopyBits( CGrafPtr port );
