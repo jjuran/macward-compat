@@ -411,6 +411,10 @@ extern void CopyMask( const BitMap*  srcBits,
 
 #pragma mark -
 
+extern PicHandle OpenPicture( const Rect* picFrame );
+
+// ...
+
 extern void ClosePicture( void );
 
 // ...
@@ -503,6 +507,10 @@ extern void GetCPixel( short      h,
 extern void GetForeColor( RGBColor* color );
 
 extern void GetBackColor( RGBColor* color );
+
+// ...
+
+extern PicHandle OpenCPicture( const OpenCPicParams* header );
 
 // ...
 
