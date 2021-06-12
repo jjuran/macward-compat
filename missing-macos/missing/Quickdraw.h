@@ -76,6 +76,13 @@ enum
 
 enum
 {
+	RGBDirect = 16,
+};
+
+// ...
+
+enum
+{
 	sysPatListID = 0,
 	iBeamCursor  = 1,
 	crossCursor  = 2,
