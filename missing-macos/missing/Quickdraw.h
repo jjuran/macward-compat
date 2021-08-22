@@ -661,6 +661,10 @@ extern void QDFlushPortBuffer( CGrafPtr   port,
 
 // ...
 
+extern OSStatus CreateCGContextForPort( CGrafPtr port, CGContextRef* context );
+
+// ...
+
 extern CGrafPtr CreateNewPortForCGDisplayID( UInt32 inCGDisplayID );
 
 // ...
