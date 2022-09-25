@@ -26,6 +26,8 @@ extern "C" {
 
 #if !__LP64__
 
+extern void GetFontName( short familyID, Str255 name );
+
 extern void GetFNum( ConstStr255Param  name,
                      short*            familyID );
 
