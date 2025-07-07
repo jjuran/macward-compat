@@ -473,6 +473,10 @@ extern Boolean MacGetPixel( short  h,
 
 // ...
 
+extern void MapRgn( RgnHandle rgn, const Rect* src, const Rect* dst );
+
+// ...
+
 extern Boolean EqualPt( Point  pt1,
                         Point  pt2 );
 
