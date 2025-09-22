@@ -31,6 +31,8 @@ extern void GetFontName( short familyID, Str255 name );
 extern void GetFNum( ConstStr255Param  name,
                      short*            familyID );
 
+extern Boolean RealFont( short fontNum, short size );
+
 #endif  // #if !__LP64__
 
 // ...
