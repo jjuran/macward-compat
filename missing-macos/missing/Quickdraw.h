@@ -262,7 +262,10 @@ extern Boolean MacUnionRect( const Rect*  src1,
                              const Rect*  src2,
                              Rect*        dstRect );
 
-// ...
+#define MacEqualRect EqualRect
+
+extern Boolean MacEqualRect( const Rect*  a,
+                             const Rect*  b );
 
 extern Boolean EmptyRect( const Rect* r );
 
@@ -458,6 +461,8 @@ extern void FillPoly( PolyHandle      poly,
 
 #pragma mark -
 
+extern void SetPt( Point* pt, short h, short v );
+
 extern void LocalToGlobal( Point* pt );
 
 extern void GlobalToLocal( Point* pt );
@@ -471,11 +476,15 @@ extern short Random( void );
 extern Boolean MacGetPixel( short  h,
                             short  v );
 
-// ...
+extern void ScalePt( Point* pt, const Rect* src, const Rect* dst );
+extern void MapPt  ( Point* pt, const Rect* src, const Rect* dst );
+extern void MapRect( Rect*  r,  const Rect* src, const Rect* dst );
 
 extern void MapRgn( RgnHandle rgn, const Rect* src, const Rect* dst );
 
 // ...
+
+extern void AddPt( Point src, Point* dst );
 
 extern Boolean EqualPt( Point  pt1,
                         Point  pt2 );
@@ -485,7 +494,13 @@ extern Boolean EqualPt( Point  pt1,
 extern Boolean MacPtInRect( Point        pt,
                             const Rect*  r );
 
-// ...
+extern void Pt2Rect( Point a, Point b, Rect* dst );
+
+extern void PtToAngle( const Rect*  r,
+                       Point        pt,
+                       short*       angle );
+
+extern void SubPt( Point src, Point* dst );
 
 extern Boolean PtInRgn( Point pt, RgnHandle rgn );
 
@@ -563,7 +578,7 @@ extern CursHandle MacGetCursor( short cursorID );
 
 extern PicHandle GetPicture( short pictureID );
 
-// ...
+extern long DeltaPoint( Point a, Point b );
 
 extern void ShieldCursor( const Rect* shieldRect, Point offset );
 
