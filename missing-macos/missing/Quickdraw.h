@@ -142,6 +142,8 @@ typedef CCrsrPtr*     CCrsrHandle;
 
 // ...
 
+#if !__LP64__
+
 #pragma mark -
 
 #define MacSetPort SetPort
@@ -687,6 +689,8 @@ extern OSStatus CreateCGContextForPort( CGrafPtr port, CGContextRef* context );
 extern CGrafPtr CreateNewPortForCGDisplayID( UInt32 inCGDisplayID );
 
 // ...
+
+#endif  // #if !__LP64__
 
 #endif  // #ifdef MAC_OS_X_VERSION_10_7
 
