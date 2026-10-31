@@ -486,6 +486,14 @@ extern void MapRgn( RgnHandle rgn, const Rect* src, const Rect* dst );
 
 // ...
 
+extern void StdBits( const BitMap*  srcBits,
+                     const Rect*    srcRect,
+                     const Rect*    dstRect,
+                     short          mode,
+                     RgnHandle      maskRgn );
+
+// ...
+
 extern void AddPt( Point src, Point* dst );
 
 extern Boolean EqualPt( Point  pt1,
